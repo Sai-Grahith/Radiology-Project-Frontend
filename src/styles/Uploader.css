@@ -1,0 +1,153 @@
+/* Body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #2d0b59, #1a2a6c);
+  color: #f4f4f4;
+}
+
+/* Upload Page Container */
+.upload-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.upload-container {
+  flex: 1;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.upload-info h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+  color: #ff6f61;
+  animation: fadeIn 1.2s ease;
+}
+
+.upload-info p {
+  font-size: 1.2em;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Drop Zone */
+.upload-box {
+  border: 2px dashed #ffc107;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 20px auto;
+  width: 60%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: fadeIn 1.5s ease;
+}
+
+.upload-box:hover {
+  border-color: #ff6f61;
+  box-shadow: 0px 0px 12px #ff9e80;
+}
+
+.upload-prompt h3 {
+  font-size: 1.5em;
+  color: #ffe082;
+}
+
+.upload-prompt p {
+  color: #cccccc;
+}
+
+.file-info {
+  margin-top: 15px;
+  color: #26c6da;
+}
+
+/* Button */
+.start-analysis-btn {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(to right, #ff6f61, #ff8a65);
+  color: white;
+  box-shadow: 0 5px 15px rgba(255, 138, 101, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.start-analysis-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(255, 138, 101, 0.6);
+}
+
+/* Footer */
+.upload-footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+.upload-footer a {
+  color: #ffb74d;
+  text-decoration: none;
+}
+
+.upload-footer a:hover {
+  text-decoration: underline;
+}
+
+/* NavigationBar */
+.custom-appbar {
+  background: linear-gradient(90deg, #3e1f92, #531c6b);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #ffca28;
+}
+
+.nav-links button {
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.nav-links button:hover {
+  transform: scale(1.1);
+  color: #ffe082;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
